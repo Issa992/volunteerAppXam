@@ -2,10 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:volunteerAppXam"
+             xmlns:controls="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              x:Class="volunteerAppXam.MainPage">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout Padding="100" VerticalOptions="CenterAndExpand" >
+        <Label Text="Choose your language" FontSize="25" HorizontalOptions="FillAndExpand" ></Label>
+
+
+        <Button Clicked="Button_OnClicked" x:Name="buSecond" Text="Arabic" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" HeightRequest="67" WidthRequest="170"></Button>
+        <Button Text="Danish" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" HeightRequest="67" WidthRequest="170" ></Button>
+        <Button Text="English" VerticalOptions="Center" HorizontalOptions="Center" FontSize="18" HeightRequest="67" WidthRequest="170" ></Button>
+
+    </StackLayout>
 
 </ContentPage>

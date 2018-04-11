@@ -13,5 +13,14 @@ namespace volunteerAppXam
 		{
 			InitializeComponent();
 		}
-	}
+	    protected override void OnAppearing()
+	    {
+	        DisplayAlert("Hello", "this is MainPage", "ok");
+	        base.OnAppearing();
+	    }
+	    private async void Button_OnClicked(object sender, EventArgs e)
+	    {
+	        await Navigation.PushAsync(new Page1());
+	    }
+    }
 }

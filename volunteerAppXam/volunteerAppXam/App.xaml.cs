@@ -13,7 +13,7 @@ namespace volunteerAppXam
 		{
 			InitializeComponent();
 
-			MainPage = new volunteerAppXam.MainPage();
+		    MainPage = new NavigationPage(new MainPage());
 		}
 
 		protected override void OnStart ()
